@@ -1,18 +1,11 @@
 <template>
 	<header>
-		<b-navbar toggleable="lg" class="w-100">
-			<b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-			<b-collapse id="nav-collapse" is-nav>
-				<b-navbar-nav>
-					<a href="/#training">Formations</a>
-					<a href="/#experiences">Expériences</a>
-					<a href="/#skills">Compétences</a>
-					<a href="/#projects">Projets</a>
-					<NuxtLink to="/contact">Contact</NuxtLink>
-				</b-navbar-nav>
-			</b-collapse>
-		</b-navbar>
+		<a href="/#about">À propos</a>
+		<a href="/#training">Formations</a>
+		<a href="/#experiences">Expériences</a>
+		<a href="/#skills">Compétences</a>
+		<a href="/#projects">Projets</a>
+		<NuxtLink to="/contact">Contact</NuxtLink>
 	</header>
 </template>
 
@@ -20,13 +13,23 @@
 
 <style lang="scss">
 header {
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	position: sticky;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 80px;
+
+	background: #fff;
+	z-index: 1;
 
 	& a {
+		color: #262626 !important;
 		text-decoration: none;
+		margin: 1rem;
 	}
 }
 </style>

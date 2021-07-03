@@ -1,3 +1,5 @@
+@use "sass:math";
+
 h3 {
 	text-transform: uppercase;
 	position: relative;
@@ -41,7 +43,7 @@ $scroll-bar-width: 15px;
 	background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-	border-radius: $scroll-bar-width / 2;
+	border-radius: math.div($scroll-bar-width, 2);
 	background: hsla(0, 20%, 20%, 0.3);
 
 	box-shadow: inset 1px 1px 1px 0px rgb(255 255 255 / 60%),

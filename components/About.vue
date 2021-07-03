@@ -42,7 +42,7 @@
 	padding: 3em;
 
 	.card-title {
-		color: #a0394a;
+		color: $primary;
 		font-weight: bold;
 	}
 }

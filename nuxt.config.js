@@ -14,7 +14,7 @@ export default {
 	},
 
 	// Global CSS: https://go.nuxtjs.dev/config-css
-	css: ['@/assets/global.scss'],
+	css: ['@/assets/global.scss', '@/assets/theme.scss'],
 
 	// Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
 	plugins: [],
@@ -34,6 +34,7 @@ export default {
 		'bootstrap-vue/nuxt',
 		// https://go.nuxtjs.dev/pwa
 		'@nuxtjs/pwa',
+		'@nuxtjs/style-resources',
 	],
 
 	// PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -41,6 +42,10 @@ export default {
 		manifest: {
 			lang: 'en',
 		},
+	},
+
+	styleResources: {
+		scss: ['@/assets/theme.scss'],
 	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,5 +1,6 @@
 @use "sass:math";
 
+// Title's animation
 h3 {
 	text-transform: uppercase;
 	position: relative;
@@ -35,7 +36,7 @@ h3 {
 	}
 }
 
-$scroll-bar-width: 15px;
+// Scrollbar
 ::-webkit-scrollbar {
 	width: $scroll-bar-width;
 }

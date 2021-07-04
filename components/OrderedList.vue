@@ -12,7 +12,14 @@
 			"
 		>
 			<div class="date d-flex align-items-center">
-				<div class="rounded-circle me-3"></div>
+				<img
+					v-if="item.logo"
+					:src="item.logo"
+					class="img-fluid rounded-circle me-3"
+					width="100px"
+					:alt="item.location"
+				/>
+				<div v-else class="rounded-circle bg-primary me-3"></div>
 				{{ item.date }}
 			</div>
 
@@ -55,11 +62,15 @@ export default Vue.extend({
 .list-group-item {
 	border: none;
 
-	.date .rounded-circle {
+	.date div.rounded-circle {
 		display: inline-block;
 		width: 3rem;
 		height: 3rem;
-		background-color: $primary;
+	}
+
+	.bg-primary {
+		// TODO find a way to overide bootstrap's utilities colors
+		background-color: $primary !important;
 	}
 
 	.description .title .emphasis {

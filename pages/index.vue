@@ -6,9 +6,9 @@
 
 		<About />
 		<Quote />
-		<Training />
-		<Experiences />
-		<Skills />
+		<Training :trainings="trainings" />
+		<Experiences :experiences="experiences" />
+		<Skills :skills="skills" />
 		<Projects />
 
 		<Footer />
@@ -17,8 +17,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import data from 'static/_/data'
 
-export default Vue.extend({})
+export default Vue.extend({
+	data() {
+		return {
+			trainings: data?.trainings,
+			experiences: data?.experiences,
+			skills: data?.skills,
+		}
+	},
+})
 </script>
-
-<style lang="scss"></style>

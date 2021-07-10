@@ -3,9 +3,14 @@
 		<h3>À propos</h3>
 
 		<article class="card mb-3 border-0">
-			<div class="row g-0">
-				<div class="col-md-6 p-5">
-					<img src="photo.png" class="img-fluid rounded-circle" alt="photo" />
+			<div class="row g-0 text-center">
+				<div class="col-md-6 d-flex align-items-center justify-content-center">
+					<img
+						src="photo.png"
+						class="img-fluid rounded-circle"
+						alt="Picture of Jimmy SCHULLER"
+						style="max-width: 300px"
+					/>
 				</div>
 				<div class="col-md-6">
 					<div class="card-body">
@@ -13,7 +18,7 @@
 						<h6 class="card-subtitle mb-2 text-muted">
 							Développeur Full-Stack
 						</h6>
-						<p class="card-text">
+						<p class="card-text text-justify">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
 							dolor alias nemo non optio quod excepturi, saepe error, dolorum
 							accusamus quasi tempore velit atque ea! Temporibus quisquam

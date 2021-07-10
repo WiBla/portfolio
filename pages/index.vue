@@ -9,7 +9,7 @@
 		<Training :trainings="trainings" />
 		<Experiences :experiences="experiences" />
 		<Skills :skills="skills" />
-		<Projects />
+		<Projects :projects="projects" />
 
 		<Footer />
 	</div>
@@ -25,6 +25,7 @@ export default Vue.extend({
 			trainings: data?.trainings,
 			experiences: data?.experiences,
 			skills: data?.skills,
+			projects: data?.projects,
 		}
 	},
 })

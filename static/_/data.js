@@ -13,7 +13,7 @@ const data = {
 	experiences: [
 		{
 			id: 1,
-			logo: 'experiences/Logo_ET9.png',
+			logo: 'experiences/Logo_ET9_Carré.png',
 			date: "Dec. 2020 - Aujourd'hui",
 			title: 'CDI',
 			location: 'Europe Tech Group',
@@ -23,7 +23,7 @@ const data = {
 		},
 		{
 			id: 2,
-			logo: 'experiences/Logo_ET9.png',
+			logo: 'experiences/Logo_ET9_Carré.png',
 			date: 'Mars 2020 - Nov. 2020',
 			title: 'Alternant',
 			location: 'Europe Tech Group',
@@ -66,12 +66,36 @@ const data = {
 			title: 'Logiciels',
 			skills: [
 				{ title: 'Git', logo: 'Git.png' },
-				{ title: 'Github', logo: 'Github.png' },
-				{ title: 'Gimp', logo: 'Gimp.png' },
+				// { title: 'Github', logo: 'Github.png' },
+				{ title: 'Gitkraken', logo: 'Gitkraken.jpg' },
 				{ title: 'Adobe XD', logo: 'Adobe XD.png' },
+				{ title: 'Gimp', logo: 'Gimp.png' },
 			],
 		},
 	},
+	projects: [
+		{
+			id: 1,
+			thumbnail: 'PreviouslyOn.png',
+			title: 'PreviouslyOn',
+			short_description:
+				"Suivez vos séries préférées et découvrez en d'autres à l'aide de l'API Betaseries.",
+			detailed_description: '',
+			tags: ['W@C', 'PHP', 'Materialize', 'Betaseries'],
+			creationDate: new Date(2019, 9, 3),
+			url: '',
+		},
+		{
+			id: 2,
+			thumbnail: '',
+			title: '',
+			short_description: '',
+			detailed_description: '',
+			tags: ['W@C'],
+			creationDate: new Date(),
+			url: '',
+		},
+	],
 }
 
 export default data
